@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('assets/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'SourceCodePro', monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.title {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 20px 0;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.404image {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    font-size: 11px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+.text:hover {
+    color: #ccc;
+}
