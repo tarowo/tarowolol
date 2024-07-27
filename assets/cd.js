@@ -8,7 +8,7 @@ document.body.appendChild(renderer.domElement);
 
 const rgbeLoader = new THREE.RGBELoader();
 rgbeLoader.setDataType(THREE.UnsignedByteType);
-rgbeLoader.load('https://threejs.org/examples/textures/equirectangular/venice_sunset_1k.hdr', function (texture) {
+rgbeLoader.load('https://tarowo.lol/assets/venice_sunset_1k.hdr', function (texture) {
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
     const envMap = pmremGenerator.fromEquirectangular(texture).texture;
     pmremGenerator.dispose();
